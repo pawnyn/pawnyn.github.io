@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<!--
+
+
+PPPPPPPPPPPPPPPPP                                                                                                                   
+P::::::::::::::::P                                                                                                                  
+P::::::PPPPPP:::::P                                                                                                                 
+PP:::::P     P:::::P                                                                                                                
+  P::::P     P:::::Paaaaaaaaaaaaawwwwwww           wwwww           wwwwwwwnnnn  nnnnnnnn yyyyyyy           yyyyyyynnnn  nnnnnnnn    
+  P::::P     P:::::Pa::::::::::::aw:::::w         w:::::w         w:::::w n:::nn::::::::nny:::::y         y:::::y n:::nn::::::::nn  
+  P::::PPPPPP:::::P aaaaaaaaa:::::aw:::::w       w:::::::w       w:::::w  n::::::::::::::nny:::::y       y:::::y  n::::::::::::::nn 
+  P:::::::::::::PP           a::::a w:::::w     w:::::::::w     w:::::w   nn:::::::::::::::ny:::::y     y:::::y   nn:::::::::::::::n
+  P::::PPPPPPPPP      aaaaaaa:::::a  w:::::w   w:::::w:::::w   w:::::w      n:::::nnnn:::::n y:::::y   y:::::y      n:::::nnnn:::::n
+  P::::P            aa::::::::::::a   w:::::w w:::::w w:::::w w:::::w       n::::n    n::::n  y:::::y y:::::y       n::::n    n::::n
+  P::::P           a::::aaaa::::::a    w:::::w:::::w   w:::::w:::::w        n::::n    n::::n   y:::::y:::::y        n::::n    n::::n        © 2020, Pawnyn
+  P::::P          a::::a    a:::::a     w:::::::::w     w:::::::::w         n::::n    n::::n    y:::::::::y         n::::n    n::::n
+PP::::::PP        a::::a    a:::::a      w:::::::w       w:::::::w          n::::n    n::::n     y:::::::y          n::::n    n::::n
+P::::::::P        a:::::aaaa::::::a       w:::::w         w:::::w           n::::n    n::::n      y:::::y           n::::n    n::::n
+P::::::::P         a::::::::::aa:::a       w:::w           w:::w            n::::n    n::::n     y:::::y            n::::n    n::::n
+PPPPPPPPPP          aaaaaaaaaa  aaaa        www             www             nnnnnn    nnnnnn    y:::::y             nnnnnn    nnnnnn
+                                                                                               y:::::y                              
+                                                                                              y:::::y                               
+                                                                                             y:::::y                                
+                                                                                            y:::::y                                 
+                                                                                           yyyyyyy                                  
+
+                                                                                                      
+-->
+<head>
+    <meta charset="utf-8">
+    <link href="../assets/styles/webhook.css" rel="stylesheet" type="text/css">
+	<link rel="icon" type="image/png" href="../assets/images/logo/ico/pawnyn.png" />
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6ba3d2e961.js" crossorigin="anonymous"></script>
+    <title>Webhook · Pawnyn</title>
+</head>
+
+<body class="noselect">
+    <section id="main-container">
+        <div class="headline">
+            <span class="small">Pawnyn</span><br/>Webhook Application
+        </div>
+        <div id="content-wrapper">
+            <div class="left">
+                <input id="url" type="text" placeholder="Webhook URL" autocomplete="off">
+                <input id="username" type="text" placeholder="Webhook Username" autocomplete="off">
+                <input id="avatar_url" type="text" placeholder="Webhook Avatar URL" autocomplete="off">
+            </div>
+            <div class="right">
+                <textarea id="content" placeholder="Discord Message goes here..."></textarea>
+            </div>
+        </div>
+        <div class="bottom">
+            <button type="button" name="Submit" id="Submit" value="Submit" class="pw-button">Send Webhook</button>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript">
+    </script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js">
+    </script> 
+    <script>
+    $(function() {
+        $('#Submit').click(function(e) {
+        var url = $("#url").val();
+        var content = $("#content").val();
+        var username = $("#username").val();
+        var avatar_url = $("#avatar_url").val();
+        $.post(url,
+    {"content": content, "username": username, "avatar_url": avatar_url},
+    );});
+    });
+    </script>
+    <!--
+    <footer>
+        <span class="footer-text" style="">How about you add <span class="rainbow">Pawnyn#0001</span> on Discord?</span>
+    </footer>
+    -->
+</body>
+</html>

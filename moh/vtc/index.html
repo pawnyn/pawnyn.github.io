@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- OpenGraph Meta Tags -->
+    <!-- Primary Meta Tags -->
+    <title>Welcone · Moh Hauliers</title>
+    <meta name="title" content="Welcone · Moh Hauliers">
+    <meta name="description" content="We have a passion for trucking for and with Moh! Do you?">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pawnyn.github.io/moh/vtc/">
+    <meta property="og:title" content="Welcone · Moh Hauliers">
+    <meta property="og:description" content="We have a passion for trucking for and with Moh! Do you?">
+    <meta property="og:image" content="https://pawnyn.github.io/assets/images/opengraph/opbg.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://pawnyn.github.io/moh/vtc/">
+    <meta property="twitter:title" content="Welcone · Moh Hauliers">
+    <meta property="twitter:description" content="We have a passion for trucking for and with Moh! Do you?">
+    <meta property="twitter:image" content="https://pawnyn.github.io/assets/images/opengraph/opbg.png">
+    <!-- End OpenGraph -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../assets/images/logo/ico/mmh.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../../assets/styles/vtc_main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.0/css/mdb.min.css" rel="stylesheet">
+    <script src="../../assets/scripts/js/countup/countUp.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+		$(document).scroll(function() {
+  			var posY = $(this).scrollTop();
+  			if (posY < 500) {
+    			$('.scroller').fadeIn();
+  			} else {
+    			$('.scroller').fadeOut();
+  			}
+		});
+    </script>
+    <script>
+        $('#stats-starter').click(funtion() {
+            var c = new CountUp("counter",0,40657);
+            c.start();
+        })
+    </script>
+    <script>
+        function showStats() {
+            var kilometerCounter = new CountUp("kilometer",0,684051);
+            var jobsCounter = new CountUp("jobs",0,362);
+            var driverCounter = new CountUp("drivers",0,26);
+            kilometerCounter.start(); jobsCounter.start(); driverCounter.start();
+        }
+    </script>
+    <!-- <script>
+        function hideStatsButton() {
+            var x = document.getElementById("stats-starter");
+            if (x.style.display === "none") {
+                 x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script> -->
+    <script>
+        $(document).ready(function() {
+            $(".btn-count").click(function() {
+                $(this).fadeOut("slow")
+            });
+        });
+    </script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav__list animated">
+                <li class="nav__item animated fadeInDown delay-1s"><a href="javascript:void(0)" onclick="javascript:document.getElementById('about-us').scrollIntoView();" class="nav__link">About us</a></li>
+                <li class="nav__item animated fadeInUp delay-1s"><a href="javascript:void(0)" onclick="javascript:document.getElementById('statistics').scrollIntoView();" class="nav__link">Stats</a></li>
+                <li class="nav__item animated fadeInDown delay-1s"><a href="javascript:void(0)" onclick="javascript:document.getElementById('report').scrollIntoView();" class="nav__link">Report a driver</a></li>
+                <li class="nav__item animated fadeInUp delay-1s"><a href="javascript:void(0)" class="nav__link">Apply</a></li>
+                <li hidden class="nav__item animated fadeInDown delay-1s"><a href="https://github.com/pawsinsocks" target="_blank" class="nav__link low-opacity"><i class="fas fa-paw"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="max"  style="">
+        <article class="center text-white font-bigger">
+            <h1 class="landing-headline animated fadeInDown">Moh Hauliers</h1>
+            <p class="landing-subline animated fadeInDown delay-1s">Be smart, truck with Moh.</p>
+        </article>
+
+        <div class="bot scroll-hint">
+            <div class="scroller" onclick="javascript:document.getElementById('about-us').scrollIntoView();"></div>
+        </div>
+    </section>
+    
+    <main class="content">
+        <section class="full-w int" id="about-us">
+            <div class="container animated fadeInUp">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="about-us-headline">Who are the Moh Hauliers?</h1>
+                        <p class="about-us-text">
+                            The ones that forward cargo in the name of Moh are usually refered to as &OpenCurlyDoubleQuote;Moh Hauliers&CloseCurlyDoubleQuote;. A squad of elite drivers who make sure that every single job meets company standards and comes to their clients without any damage.
+                        </p>
+                    </div>
+                    <div class="col col-img">
+                        <img src="https://i.imgur.com/WVRq4I0.png" style="max-width: 500px; border-radius: 9px;" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="spacer"></div>
+
+            <div class="container animated fadeInUp">
+                <div class="row">
+                    <div class="col col-img">
+                        <img src="../../assets/images/logo/mhauliers.png" style="max-width: 650px; border-radius: 9px;" alt="">
+                    </div>
+                    <div class="col">
+                        <h1 class="about-us-headline">In the name of Moh.</h1>
+                        <p class="about-us-text">
+                            The term "Moh" has stopped being just a username a long time ago. Nowadays, the name Moh stands for quality, customer contact, high precision, and excellent service. Truckers for Moh are recognizable by their blue "Moh M" which must be present on their uniform at all times.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="spacer"></div>
+
+            <div class="container animated fadeInUp">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="about-us-headline">Convoy Security Force</h1>
+                        <p class="about-us-text">
+                            Moh Hauliers Convoy Defense Task-Force will make sure that any convoy leaving one of the Moh Delivery Centre bases will arrive at its destination without any loss or damage. Protecting Moh Haulier convoys are squad of specially trained, ex-militray MP officers who have received exsessive training in close-quarter combat as well as lethal and non-lethal
+                            weapon training.
+                        </p>
+                    </div>
+                    <div class="col col-img">
+                        <img src="../../assets/images/au/police.jpg" class="img-police" style="" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="full-w int" id="statistics" style="text-align: center;">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="stats-headline" id="kilometer">0</h1>
+                        <span class="stats-subline">driven kilometres</span>
+                    </div>
+                    <div class="col">
+                        <h1 class="stats-headline" id="jobs">0</h1>
+                        <span class="stats-subline">executed jobs</span>
+                    </div>
+                    <div class="col">
+                        <h1 class="stats-headline" id="drivers">0</h1>
+                        <span class="stats-subline">hired drivers</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="spacer"></div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col" style="display: flex; justify-content: center; align-items: center;">
+                        <a href="javascript:void(0)" onclick="showStats(); hideStatsButton();" style="display: block;" id="stats-starter" class="btn-count">Show me the stats</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="full-w int" id="report">
+            <div class="form-headline">
+                Report a driver
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <form class="form" action="" method="post">
+                            <div class="form-row">
+                                <label class="report-label" for="username">Your name <sup class="required-hint">*</sup></label>
+                                <input placeholder="Martin Tofter" class="report-input" type="text" name="yourname" id="yourname" autocomplete="stfu" required> <!-- ok then -->
+
+                                <div class="spacer-small"></div>
+
+                                <label class="report-label" for="email">E-mail address</label>
+                                <input placehodler="prime@mohhauliers.co.uk" class="report-input" type="text" name="email" id="email" autocomplete="off">
+                            </div>
+
+                            <div class="form-row">
+                                <label class="report-label" for="drivername">Driver's name <sup class="required-hint">*</sup></label>
+                                <input placeholder="Moh_, 89284" class="report-input" autocomplete="off" type="text" name="drivername" id="drivername" required>
+
+                                <div class="spacer-small"></div>
+
+                                <label class="report-label" for="date">Date of Misconduct <sup class="required-hint">*</sup></label>
+                                <input class="report-input" autocomplete="off" type="date" name="date" id="date" required>
+                            </div>
+
+                            <div class="form-row-full" style="flex-direction: column;">
+                                <label for="reportcontent" class="report-label-full" style="width: 100%;">Tell us what happened <sup class="required-hint">*</sup></label>
+                                <textarea name="report_content" id="report_content" cols="30" rows="10" class="report-body" required></textarea>
+                            </div>
+                            
+                            <div class="form-row-full" style="">
+                                <!-- <label class="report-label-half" for="proof">Evidence</label> -->
+                                <input class="report-input-half" type="file" name="proof" id="proof">
+                                <div style="height: 100%; width: 15px;"></div>
+                                <label class="report-label-half" for="notice" style="display: inline;"><input type="checkbox" name="notice" id="" style="display: inline;" required> I have read the Privacy Policy. <sup class="required-hint">*</sup></label>
+                            </div>
+                            
+                            <div class="form-row-full">
+                                <button href="" class="btn-report" type="submit" name="submit">Send Report</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col">
+                        <h2 class="report-subheadline">
+                            Why should I report a driver?
+                        </h2>
+                        <p class="report-text">
+                            Moh Hauliers wants to provide its clients with the highest in service, performace, and quality. Sometimes, drivers do not meet these conditions. If you choose to report a driver, you help us to improve our fleet.
+                        </p>
+                        <p class="report-text">
+                            So, why should I report any misconduct I see?
+                            <ol class="report-list">
+                                <li class="report-item">
+                                    <strong class="report-strong">Help us to find out what additional training the driver needs.</strong> If one of the drivers shows any type of misconduct, we will make sure to give them the opportunity to seek extra training to make sure their work can be executed with maximum efficiency.
+                                </li>
+                                <li class="report-item">
+                                    <strong class="report-strong">Help us to fire those who are not willing to respect company policy.</strong> Sometimes, drivers decide to go—as we call it—rogue. This means that a driver that has previously shown to be a valuable addition to our team, no longer respects our conditions and therefore starts to put the company's reputation down. We will make sure that these drivers will be punished and, if their behaviour continues, be expelled from the company itself.
+                                </li>
+                            </ol>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="joinus">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="joinus-headline">
+                            Think you got what it takes to be a <span class="joinus-mh">Moh Haulier</span>?
+                        </h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="spacer" style="height: 55px !important;"></div>
+
+            <div class="container" style>
+                <div class="row">
+                    <div class="col" style="display: flex; justify-content: center; align-items: center;">
+                        <a href="#" class="btn btn-apply">Apply now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome &centerdot; Pawnyn</title>
+	<!-- <meta http-equiv="refresh" content="0; url=403.html" /> -->
+    <meta charset="utf-8">
+	<meta name="theme-color" content="#621212">
+	<link rel="icon" type="image/png" href="assets/images/logo/ico/pawnyn.png" />
+    <link href="assets/styles/pw.css" rel="stylesheet" type="text/css">
+    <link href="assets/styles/fontawesome/all.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/6ba3d2e961.js" crossorigin="anonymous"></script>
+    <style>
+      main              {display: block; color: rgb(255, 255, 255); position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+      span#pronounce    {display: block; text-align: center; color: salmon; font-size: 1vw; font-family: sans-serif;}
+      pre               {font-size: 1vw; user-select: none; text-shadow: 2px 2px 5px #111;}
+      div#botpw         {display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 32px; font-family: monospace; user-select: none; color: #999; text-align: center;}
+      div#botpw span    {font-size: 70px; display: block; text-align: center;}
+      div#botpw code    {padding: 5px 7px; background: rgb(216, 216, 216); border-radius: 7px; color: #111;}
+      .background       {position: absolute; top: 0; left: 0; right: 0; bottom: 0; display: block; z-index: 0;}
+      .text-gradient    {background: linear-gradient(to right, #30CFD0 0%, #F290FF 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+    </style>
+</head>
+
+<body style="background: rgb(255, 255, 255);">
+  	<!-- <main style="">
+		<span id="pronounce" class="text-gradient" style="" name="pronounce">/pɔːnaɪn/</span>
+	</main> -->
+	<img src="assets/images/logo/pawnyn_logo_text.png" draggable="false" style="width: 350px; height: auto;" alt class="pos-abs-c z-img">
+ 	<canvas class="background"></canvas>
+	<script src="assets/scripts/js/node_modules/particlesjs/src/particles.js"></script>
+	<script type="text/javascript">
+		window.onload = function() {
+			Particles.init({
+				selector: '.background',
+				color: '#111111',
+				maxParticles: 130,
+				connectParticles: true,
+				responsive: [
+					{
+						breakpoint: 768,
+						options: {
+							maxParticles: 80
+						}
+					}, {
+						breakpoint: 375,
+						options: {
+							maxParticles: 60
+						}
+					}
+				]
+			});
+		};
+	</script>
+</body>
+</html>

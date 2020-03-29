@@ -1,0 +1,116 @@
+<!doctype html>
+<!-- "joke" file for Moh. -->
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="moh, search, pawnyn"/>
+<meta name="description" content="A quick search engine for everything related to Moh (which doesn't work... yet)."/>
+<meta name="subject" content="Moh's search engine">
+<meta name="copyright"content="Moh's Witnesses">
+<meta name="language" content="EN">
+<meta name="robots" content="index,follow" />
+<meta name="revised" content="February 22, 2020 2:30pm" />
+<meta name="abstract" content="">
+<meta name="topic" content="">
+<meta name="summary" content="">
+<meta name="Classification" content="Private">
+<meta name="author" content="Pawnyn">
+<meta name="designer" content="Pawnyn">
+<meta name="copyright" content="">
+<meta name="reply-to" content="">
+<meta name="owner" content="Pawnyn">
+<meta name="url" content="">
+<meta name="identifier-URL" content="">
+<meta name="directory" content="">
+<meta name="category" content="">
+<meta name="coverage" content="Worldwide">
+<meta name="distribution" content="">
+<meta name="rating" content="">
+<meta name="revisit-after" content="">
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<!-- ♡ -->
+<title>Moogle (Moh's Google) &centerdot; Pawnyn</title>
+<link rel="icon" type="image/png" href="assets/images/logo/ico/pawnyn.png" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<style type="text/css">
+	@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap'); :root {
+	 --white: #FFFFFF;
+	 --black: #000000;
+	 --purple: #8500FF;
+	 --cyan: #5ACAFF;
+	 --darkp: #151729;
+	 --paw-yellow: #F6FF64;
+	 --paw-red: #FF6060;
+	 } * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; color: var(--white);} body {
+	 height: 100vh;
+	 user-select: none;
+	 } #searchbox {
+	 position: absolute;
+	 height: 100%; width: 100%;
+	 /*
+	 top: 10%; bottom: 10%;
+	 left: 10%; right: 10%;
+	 */
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: center;
+	 align-items: center;
+	 background-image: url("assets/images/dev/moh_background_skew.png"); background-color: #111;
+	 box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); } #searchbox h1 {
+	 font-size: calc(6em + 1vw);
+	 letter-spacing: -10px;
+	 } form {
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 width: 100%;
+	 } input#term {
+	 width: 40%;
+	 text-align: center;
+	 font-size: 2em;
+	 border-radius: 20px;
+	 border: none;
+	 outline: 0;
+	 padding: 16px;
+	 color: var(--darkp);
+	 } input#term::placeholder {
+	 opacity: 0.5;
+	 font-size: 90%;
+	 } .note {
+	 font-family: inherit;
+	 font-size: inherit;
+	 opacity: 1;
+	 margin-top: 15px;
+	 } a {
+	 background: linear-gradient(to top, var(--paw-red), var(--paw-yellow)); -webkit-background-clip: text;
+	 -webkit-text-fill-color: transparent;
+	 transition: font-size .3s;
+	 } a:hover {
+	 font-weight: bold;
+	 } 	
+</style>
+</head>
+
+<body>
+    <div id="searchbox" style="">
+		<p>What do you want to know?</p>
+		<h1>
+			<span style="color: #4285F4;">M</span>
+			<span style="color: #DB4437;">o</span>
+			<span style="color: #F4B400;">o</span>
+			<span style="color: #4285F4;">g</span>
+			<span style="color: #0F9D58;">l</span>
+			<span style="color: #DB4437;">e</span>
+		</h1>
+		<br/>
+		<form action="404.html">
+        	<input id="term" autocomplete="off" placeholder="">
+		</form>
+        <kbd class="note">Search results provided by <a href="https://steamcommunity.com/groups/fsuitsharing" target="_blank">Moh's Witnesses</a></kbd>
+    </div>
+    <script src="assets/scripts/js/design/rspmv.js" type="text/javascript"></script>
+	<script src="assets/scripts/js/technical/m_placeholder.js" type="text/javascript"></script>
+</body>
+</html>

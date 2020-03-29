@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Forbidden (403) &centerdot; Pawnyn</title>
+	<link rel="icon" type="image/png" href="assets/images/logo/ico/pawnyn.png" />
+	<link href="https://dl.dropboxusercontent.com/s/to7hejjz91u8om7/error.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Gelasio|Heebo&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/6ba3d2e961.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<article>
+		<span class="pw-404-top">It looks like you've encountered an error. Yikes.</span>
+		<h1 class="pw-404-mid">403</h1>
+		<span class="pw-404-bot warning">Forbidden</span>
+	</article>
+	<span class="note">If you feel like you're seeing this message because I am too stupid to write this stuff and therefore broke something, please contact me on Disocrd: Nya#0001</span>
+	<canvas class="background"></canvas>
+	<script src="https://dl.dropboxusercontent.com/s/5arxdcugjm27f51/particles.js"></script>
+	<script type="text/javascript">
+		window.onload = function() {
+			Particles.init({
+				selector: '.background',
+				color: '#F0F0F0',
+				maxParticles: 130,
+				connectParticles: true,
+				responsive: [
+					{
+						breakpoint: 768,
+						options: {
+							maxParticles: 80
+						}
+					}, {
+						breakpoint: 375,
+						options: {
+							maxParticles: 50
+						}
+					}
+				]
+			});
+		};
+	</script>
+</body>
+</html>
