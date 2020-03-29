@@ -54,7 +54,7 @@ html {
 
 .nav__link:hover {
     padding: 1.1em !important;
-    background-color: #F70058 !important;
+    background-color: #50c4e3 !important;
     transition: all ease-out 150ms;
 }
 
@@ -86,7 +86,7 @@ html {
 
 .landing-headline {
     font-size: 700% !important;
-    color: var(--red);
+    color: #50c4e3;
     font-weight: 900;
     text-transform: uppercase;
 }
@@ -104,7 +104,7 @@ html {
     position: relative;
     width: 35px;
     height: 60px;
-    border: 3px solid var(--red);
+    border: 3px solid #50c4e3;
     border-radius: 60px;
     opacity: .7;
     cursor: pointer;
@@ -115,7 +115,7 @@ html {
     position: absolute;
     height: 9px;
     width: 9px;
-    background-color: var(--red);
+    background-color: #50c4e3;
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
@@ -228,7 +228,7 @@ html {
 .btn-report {
     text-decoration: none;
     color: #fff !important;
-    background: rgba(247, 0, 88, 1);
+    background: #50c4e3;
     opacity: .3;
     padding: 0.8em;
     width: 160px;
@@ -248,13 +248,13 @@ html {
 .report-subheadline {
     text-transform: uppercase;
     font-weight: 600;
-    color: var(--red) !important;
+    color: #50c4e3 !important;
 }
 
 .report-strong {
     text-transform: uppercase;
     font-weight: 700;
-    color: var(--red) !important;
+    color: #50c4e3 !important;
 }
 
 .report-text {
@@ -284,7 +284,7 @@ html {
 .btn-count {
     padding: .6em;
     border-radius: 6px;
-    background: var(--red);
+    background: #50c4e3;
     color: #fff !important;
     text-decoration: none;
     transition: width ease-out 150ms;
@@ -317,7 +317,7 @@ hr.big {
 .stats-headline {
     font-weight: 700;
     font-family: 'Work Sans', sans-serif !important;
-    color: var(--red) !important;
+    color: #50c4e3 !important;
 }
 
 .stats-subline {
