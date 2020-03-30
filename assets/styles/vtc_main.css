@@ -1,6 +1,7 @@
 :root {
     --red: #F70058 !important;
     --blue: #06181f !important;
+    --moh-blue: #50c4e3 !important;
 }
 
 * {
@@ -29,6 +30,27 @@ html {
     font-family: 'Work Sans', sans-serif !important;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+.progress__container {
+    position: fixed;
+    width: 100%;
+    height: 11px !important;
+    background: #0c2731;
+    bottom: 0;
+    z-index: 9999999;
+}
+
+.progress__bar {
+    height: 11px !important;
+    width: 0%;
+    background: linear-gradient(45deg, var(--moh-blue) 75%, var(--red) 120%);
+    background-size: contain;
+}
+
+.sticky {
+    position: fixed;
+    bottom: 0;
 }
 
 .nav__list {
@@ -357,7 +379,7 @@ hr.big {
 }
 
 .btn-apply {
-    border: 2.5px solid #50c4e3 !important;
+    border: 2.5px solid rgba(80, 196, 227, 0.8)  !important;
     color: white !important;
     transition: all ease-out 150ms !important;
     padding-left: 2.14rem; padding-right: 2.14rem;
@@ -369,6 +391,18 @@ hr.big {
     transition: all ease-out 150ms !important;
     padding-left: 6rem; padding-right: 6rem;
 }
+
+.shine-link:hover {
+    -webkit-mask-image: linear-gradient(-75deg,rgba(0, 0, 0, 0.8) 30%, rgb(48, 48, 48) 50%,rgba(0,0,0,.8) 70%);
+    -webkit-mask-size:200%;
+    animation: shine 1.2s infinite;
+}
+
+@-webkit-keyframes shine {
+    from {-webkit-mask-position:150%}
+    to{-webkit-mask-position:-50%}
+}
+
 
 
 @media screen and (max-width: 690px) {
