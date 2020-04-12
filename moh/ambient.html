@@ -1,0 +1,359 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="moh, search, pawnyn, mah, ambient hour"/>
+	<meta name="description" content="Moh's Ambient Hour is a daily Spotify playlist with some new, some old, but always really good songs."/>
+	<meta name="subject" content="Moh's search engine">
+	<meta name="copyright"content="Moh's Witnesses">
+	<meta name="language" content="EN">
+	<meta name="robots" content="index,follow" />
+	<meta name="revised" content="February 24, 2020 2:30pm" />
+	<meta name="abstract" content="">
+	<meta name="topic" content="">
+	<meta name="summary" content="">
+	<meta name="Classification" content="Private">
+	<meta name="author" content="Pawnyn">
+	<meta name="designer" content="Pawnyn">
+	<meta name="copyright" content="">
+	<meta name="reply-to" content="">
+	<meta name="owner" content="Pawnyn">
+	<meta name="url" content="">
+	<meta name="identifier-URL" content="">
+	<meta name="directory" content="">
+	<meta name="category" content="">
+	<meta name="coverage" content="Worldwide">
+	<meta name="distribution" content="">
+	<meta name="rating" content="">
+	<meta name="revisit-after" content="">
+	<meta http-equiv="Expires" content="0">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache">
+
+	<meta http-equiv="refresh" content="0; url=https://pawnyn.github.io/moh/">
+
+	<!-- ♡ -->
+	<title>Moh's Ambient Hour &centerdot; Pawnyn</title>
+	<link href="../assets/styles/ambienthour.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700&display=swap" rel="stylesheet">
+	<link href="../assets/images/logo/ico/mmh.png" rel="icon" type="image/png" />
+	<script src="https://kit.fontawesome.com/6ba3d2e961.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$(document).scroll(function() {
+  			var posY = $(this).scrollTop();
+  			if (posY > 100) {
+    			$('.btt').fadeIn();
+  			} else {
+    			$('.btt').fadeOut();
+  			}
+		});
+	</script>
+	<!--
+	<style type="text/css">
+		.btt {display: none;}
+	</style>
+	-->
+</head>
+	
+<body>
+	<!-- //start menu overlay -->
+	<div id="mmh-menu" class="overlay">
+		<a href="javascript:void(0)" class="closebtn" onclick="menuFadeOut()">&times;</a>
+		<div class="overlay-content">
+			<a class="overlay-nav--btn" onclick="scrollWhy(); menuFadeOut();">Why Moh’s Ambient Hour?</a>
+			<a class="overlay-nav--btn" onclick="scrollReviews(); menuFadeOut();">Opinions</a>
+			<a class="overlay-nav--btn" onclick="scrollCEpisode(); menuFadeOut();">Today’s episode</a>
+			<a class="overlay-nav--btn" onclick="scrollArchive(); menuFadeOut();">Moh's Ambient Archive</a>
+		</div>
+	  </div>
+	<div class="btt" onclick="document.getElementById('landing').scrollIntoView();">
+		<i class="fas fa-arrow-circle-up"></i>
+	</div>
+
+	<!-- //start main frame -->
+	<section id="landing">
+		<header id="landing_header">
+			<div id="title">
+				<h1>Moh’s Ambient Hour</h1>
+			</div>
+			<div id="nav">
+				<a href="../index.html" class="nav-link">Home</a>
+				<a href="https://discord.gg/nECf4Ds" class="nav-link">Discord</a>
+				<!-- <a href="" class="nav-link">Spotify</a> --> <!-- I actually need Moh's Spotify link -->
+				<a href="https://steamcommunity.com/profiles/76561198000222751" class="nav-link">Steam</a>
+			</div>
+		</header>
+		<div class="upload-notice--wrapper">
+			<span class="ml-note-top"><i class="fas fa-info-circle" style="display: block; text-align: center; margin-bottom: 3px;"></i><s class="">Playlists air between 11 pm and 12 am GMT.</s></span>
+		</div>
+		<div id="wrapper">
+			<article id="logo">
+				<img src="../assets/images/logo/mmh/mmh_logo_bl_ambient_b.png" onclick="menuFadeIn();" draggable="false" class="" alt="Moh's Magical Hour" />
+				<h1 style="text-align: center; margin-top: 25px;">Click the logo to open the navigation.</h1>
+			</article>
+
+			<!-- <article id="description">
+				<h1>What is <span class="mmh">Moh's Ambient Hour</span>?</h1>
+				<p>Moh's Ambient Hour is a daily Spotify playlist with some new, some old, but always really good songs.</p>
+			</article> -->
+		</div>
+
+		<!-- <article id="links">
+			<a href="javascript:void(0)" onclick="document.getElementById('current_episode').scrollIntoView();" class="btn-link main"><span>Current episode</span></a>
+			<span style="display: inline-block; width: 30px;"></span>
+			<a href="javascript:void(0)" onclick="document.getElementById('lib').scrollIntoView();" class="btn-link secondary"><span>Archive</span></a>
+		</article> -->
+
+		<!-- <span class="seperator"></span> -->
+
+		<!-- // currently not using icons that require source -->
+		<!-- <div class="ml-note">
+			Icons made by <a href="https://www.flaticon.com/authors/darius-dan">Darius Dan</a> from <a href="https://www.flaticon.com/">www.flaticon.com</a>
+			Playlist air between <s class="white">11 pm</s> and <s class="white">12 am</s> GMT.
+		</div> -->
+	</section>
+
+	<!-- //start why us? -->
+	<section id="why">
+		<h1 class="why_headline">Why should you listen to Moh’s Ambient Hour?</h1>
+		<div class="why_wrapper--zero">
+			<div class="why_wrapper">
+				<div class="col">
+					<h3 class="col_headline">Hand-picked songs</h3>
+					<p class="col_description">
+						Moh’s Ambient Hour features a daily selection of hand-picked ambient songs for you to listen to when you’re relaxing, working, focusing, driving, or whatever you’re up to.
+					</p>
+				</div>
+				<div class="col">
+					<h3 class="col_headline">Spotify playlists</h3>
+					<p class="col_description">
+						Moh’s Ambient Hour airs in daily Spotify playlist. That means that you won’t have to worry about missing out on an episode. You decide when what plays. Spotify playlists are also available everywhere you go – they are synced on your desktop PC, your smartphone, your SmartTV, car radio, and other devices that support Spotify playback.
+					</p>
+				</div>
+				<div class="col">
+					<h3 class="col_headline">#MohMission</h3>
+					<p class="col_description">
+						Moh’s Ambient Hour’s #MohMission aims to bring the joy of ambient tunes and songs to everybody; to people like you and I, old veterans of the genre, and new-comers who might not even know that they like this kind of music genre. #MohMission is a perfect place to start your ambient journey as our playlists are not driven by any company to promote or push their songs. #MohMission brings you the finest in ambient music – independently chosen by our editor team.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- //start user reviews -->
+	<section id="users">
+		<h1 class="quotes_headline">What do our <span class="mmh">listeners</span> say?</h1>
+		<div class="quotes_wrapper">
+			<div class="quotes">
+				<div class="card">
+					<p>Like, I really don’t know who Moh is, Max, but I kinda like his taste in music. I mean, I usually go for something with a lot more ‘power’ but this is really nice when it’s late or when I just want to relax.</p>
+					<span class="author">aeVou</span>
+				</div>
+				<div class="card">
+					<p>The music is very nice and relaxing. It’s almost like you can feel the music rushing through your body and giving you goose bumps. I’ve never really thought that I’d like this type of music.</p>
+					<span class="author">Nykloon</span>
+				</div>
+				<div class="card">
+					<p>Whenever I listen to this kind of music, I feel like I’m on a journey to look for something. For real, Max. It just takes me a different place each time. Some of them really hurt my <em>fucking</em> feels, man.</p>
+					<span class="author">Striker</span>
+				</div>
+				<div class="card">
+					<p>It traps me in the nothingness of sound. It’s like a beautiful journey down a silent, playful abys.</p>
+					<span class="author">Wind</span>
+				</div>
+				<div class="card">
+					<p>TL;DR: this ambience is good for pairing sound with emotional imagery. I personally feel the ambient sounds and songs such as ones like this, ones that sound sad and low, are great for telling listeners and viewers to be sad. The slow tempo of this style of ambient tracks convey the literal speed of which stories or emotions should be.</p>
+					<span class="author">Nyx</span>
+				</div>
+			</div>
+		</div>
+		<!-- <span class="seperator"></span> -->
+	</section>
+
+	<section id="current_episode">
+		<iframe src="https://open.spotify.com/embed/playlist/79uJStpAHPtQ2GRIkKOCve" allowfullscreen frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+	</section>
+
+	<!-- //start archive -->
+	<section id="lib">
+		<div class="d-65px-sp"></div>
+		<article id="card-wrapper">
+			<h1 class="archive-hl"><span class="unskew">Moh's <span class="mmh">Ambient</span> Archive</span></h1>
+			<h2 class="month">Febraury</h2>
+			<br />
+			<button type="button" class="pw-card"><b class="episode-date">February 24<sup>th</sup>, 2020</b> <i class="episode-title">The more you ask the more I will defend myself.</i></button>
+			<div class="pw-card-content">
+				<iframe src="https://open.spotify.com/embed/playlist/1aZ01HtUHnjwALLJlWkvVt" width="100%" height="485" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+				<div class="reaction success">Moh: “Not bad, 6 of those are already in my existing playlist.”</div>
+			</div>
+			<span class="card-spacer"></span>
+			<button type="button" class="pw-card"><b class="episode-date">February 25<sup>th</sup>, 2020</b> <i class="episode-title">Seabrooks Sea Salted Crisps, proudly made in Yorkshire.</i></button>
+			<div class="pw-card-content">
+				<iframe src="https://open.spotify.com/embed/playlist/1AwjHPu7X9n9Blb9HDfn4Z" width="100%" height="485" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+				<div class="reaction awaiting">Awaiting Moh's review.</div>
+			</div>
+			<span class="card-spacer"></span>
+			<button type="button" class="pw-card"><b class="episode-date">February 26<sup>th</sup>, 2020</b> <i class="episode-title">Your avatar is cute.</i></button>
+			<div class="pw-card-content">
+				<iframe src="https://open.spotify.com/embed/playlist/2jUgsd373Lcif6xIJc0Q2B" width="100%" height="485" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+				<div class="reaction awaiting">Awaiting Moh's review.</div>
+			</div>
+			<span class="card-spacer"></span>
+			<button type="button" class="pw-card"><b class="episode-date">February 27<sup>th</sup>, 2020</b> <i class="episode-title">You’re like a human version of Google.</i></button>
+			<div class="pw-card-content">
+				<iframe src="https://open.spotify.com/embed/playlist/2fs4CSWZUbiMRuLH07i9ti" width="100%" height="485" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+				<div class="reaction awaiting">Awaiting Moh's review.</div>
+			</div>
+			<span class="card-spacer"></span>
+			<button type="button" class="pw-card"><b class="episode-date">February 28<sup>th</sup>, 2020</b> <i class="episode-title">Thanks for deleting more messages.</i></button>
+			<div class="pw-card-content">
+				<iframe src="https://open.spotify.com/embed/playlist/1mSUV0k2vXd40RG3KRSpC2" width="100%" height="485" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+				<div class="reaction awaiting">Awaiting Moh's review.</div>
+			</div>
+			<span class="card-spacer"></span>
+			<button type="button" class="pw-card"><b class="episode-date">February 29<sup>th</sup>, 2020</b> <i class="episode-title">Why would you want to buy me flowers?</i></button>
+			<div class="pw-card-content">
+				<iframe src="https://open.spotify.com/embed/playlist/0X6EE9oqgKD920jctPk0Df" width="100%" height="485" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+				<div class="reaction awaiting">Awaiting Moh's review.</div>
+			</div>
+			<hr class="gap100x">
+			<h2 class="month">March</h2>
+			<br />
+			<button type="button" class="pw-card"><b class="episode-date">March 1<sup>st</sup>, 2020</b> <i class="episode-title">You will find eternal love and happiness.</i></button>
+			<div class="pw-card-content">
+				<iframe src="https://open.spotify.com/embed/playlist/19gSgO9kVTaT6dBCHaTxvK" width="100%" height="485" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+				<div class="reaction info">As it is the 1<sup>st</sup> day of a new month, today’s Moh’s Ambient Hour will be double the usual play time.</div>
+				<div class="reaction awaiting">Awaiting Moh's review.</div>
+			</div>
+			<span class="card-spacer"></span>
+			<button type="button" class="pw-card"><b class="episode-date">March 2<sup>nd</sup>, 2020</b> <i class="episode-title">Required to talk and share feels.</i></button>
+			<div class="pw-card-content">
+				<iframe src="https://open.spotify.com/embed/playlist/7xzG2CNr4pjvkfYBEAVdu8" width="100%" height="485" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+				<div class="reaction awaiting">Awaiting Moh's review.</div>
+			</div>
+			<span class="card-spacer"></span>
+			<button type="button" class="pw-card"><b class="episode-date">March 3<sup>rd</sup>, 2020</b> <i class="episode-title">Time for some ambient.</i></button>
+			<div class="pw-card-content">
+				<iframe src="https://open.spotify.com/embed/playlist/7EXnaZ0F1OcUqSD5vsf9mS" width="100%" height="485" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+				<div class="reaction awaiting">Awaiting Moh's review.</div>
+			</div>
+			<span class="card-spacer"></span>
+			<button type="button" class="pw-card"><b class="episode-date">March 4<sup>th</sup>, 2020</b> <i class="episode-title">Don't delete your messages.</i></button>
+			<div class="pw-card-content">
+				<iframe src="https://open.spotify.com/embed/playlist/7gcUB8NNNfxZw6mHVzQuye" width="100%" height="485" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+				<div class="reaction awaiting">Awaiting Moh's review.</div>
+			</div>
+			<span class="card-spacer"></span>
+			<button type="button" class="pw-card"><b class="episode-date">March 5<sup>th</sup>, 2020</b> <i class="episode-title">I wonder what you'll be questioning.</i></button>
+			<div class="pw-card-content">
+				<iframe src="https://open.spotify.com/embed/playlist/2NTnyHeWGphutFij2ZsXWf" width="100%" height="485" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+				<div class="reaction awaiting">Awaiting Moh's review.</div>
+			</div>
+			<span class="card-spacer"></span>
+			<button type="button" class="pw-card"><b class="episode-date">March 6<sup>th</sup>, 2020</b> <i class="episode-title">Can I interest you in some ambient?</i></button>
+			<div class="pw-card-content">
+				<iframe src="https://open.spotify.com/embed/playlist/2JPkgWROw6I4cyc4sQRcAf" width="100%" height="485" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+				<div class="reaction awaiting">Awaiting Moh's review.</div>
+			</div>
+			<span class="card-spacer"></span>
+			<button type="button" class="pw-card"><b class="episode-date">March 7<sup>th</sup>, 2020</b> <i class="episode-title">I don't know why I'm so tired.</i></button>
+			<div class="pw-card-content">
+				<iframe src="https://open.spotify.com/embed/playlist/7kq0Tp6XlrSUrKfry20Rtg" width="100%" height="485" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+				<div class="reaction awaiting">Awaiting Moh's review.</div>
+			</div>
+			<span class="card-spacer"></span>
+			<button type="button" class="pw-card"><b class="episode-date">March 8<sup>th</sup>, 2020</b> <i class="episode-title">I need my blanket.</i></button>
+			<div class="pw-card-content">
+				<iframe src="https://open.spotify.com/embed/playlist/0pNxmigNlN8faS6OwO1QB1" width="100%" height="485" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+				<div class="reaction awaiting">Awaiting Moh's review.</div>
+			</div>
+			<span class="card-spacer"></span>
+			<button type="button" class="pw-card"><b class="episode-date">March 9<sup>th</sup>, 2020</b> <i class="episode-title">Leftover pizza from yesterday.</i></button>
+			<div class="pw-card-content">
+				<iframe src="https://open.spotify.com/embed/playlist/26xXiDvzMiiSQCmICoEopF" width="100%" height="485" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+				<div class="reaction awaiting">Awaiting Moh's review.</div>
+			</div>
+			<span class="card-spacer"></span>
+			<button type="button" class="pw-card"><b class="episode-date">March 10<sup>th</sup>, 2020</b> <i class="episode-title">Stay safe.</i></button>
+			<div class="pw-card-content">
+				<iframe src="https://open.spotify.com/embed/playlist/6bpjIc5Zm5zGjEd2bzUdij" width="100%" height="485" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+				<div class="reaction awaiting">Awaiting Moh's review.</div>
+			</div>
+			<span class="card-spacer"></span>
+			<button type="button" class="pw-card"><b class="episode-date">March 11<sup>th</sup>, 2020</b> <i class="episode-title">Preparing for bed.</i></button>
+			<div class="pw-card-content">
+				<iframe src="https://open.spotify.com/embed/playlist/0zl3V9lyjtTtUV0RkOSknt" width="100%" height="485" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+				<div class="reaction awaiting">Awaiting Moh's review.</div>
+			</div>
+			<span class="card-spacer"></span>
+			<button type="button" class="pw-card"><b class="episode-date">March 12<sup>th</sup>, 2020</b> <i class="episode-title">How can I help?</i></button>
+			<div class="pw-card-content">
+				<iframe src="https://open.spotify.com/embed/playlist/6T0gaopcuDBjgRRt6Ql9lt" width="100%" height="485" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+				<div class="reaction awaiting">Awaiting Moh's review.</div>
+			</div>
+			<span class="card-spacer"></span>
+			<button type="button" class="pw-card"><b class="episode-date">March 13<sup>th</sup>, 2020</b> <i class="episode-title">It feels meaningless.</i></button>
+			<div class="pw-card-content">
+				<iframe src="https://open.spotify.com/embed/playlist/0Z8mpXVWFnQaxLMZwrb0CO" width="100%" height="485" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+				<div class="reaction awaiting">Awaiting Moh's review.</div>
+			</div>
+			<span class="card-spacer"></span>
+			<button type="button" class="pw-card"><b class="episode-date">March 14<sup>th</sup>, 2020</b> <i class="episode-title">Sounds like a nice holiday.</i></button>
+			<div class="pw-card-content">
+				<iframe src="https://open.spotify.com/embed/playlist/4Qyl2JuEsggZVd1UAKrYXY" width="100%" height="485" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+				<div class="reaction awaiting">Awaiting Moh's review.</div>
+			</div>
+			<span class="card-spacer"></span>
+			<button type="button" class="pw-card"><b class="episode-date">March 15<sup>th</sup>, 2020</b> <i class="episode-title">Regular red label.</i></button>
+			<div class="pw-card-content">
+				<iframe src="https://open.spotify.com/embed/playlist/79uJStpAHPtQ2GRIkKOCve" width="100%" height="485" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+				<div class="reaction awaiting">Awaiting Moh's review.</div>
+			</div>
+		</article>
+	</section>
+
+	<section id="eeveelution">
+		<img src="../assets/images/svg/pokeball.svg" alt="A standard Pokéball used to catch Pokémon">
+		<span class="eevee-text">Made with <span class="heart">&#10084;</span> by <a href="https://github.com/eeveelution" class="rb" target="_blank">eeveelution</a> for <a href="https://steamcommunity.com/profiles/76561198000222751" class="rb" target="_blank">Moh<small>#6250</small></a></span>
+	</section>
+
+	<footer class="footer">
+		<div class="footer-container">
+			<article class="footer-content">
+				<h3>Pawnyn</h3>
+				<ul>
+					<a href="https://github.com/pawnyn"><li>Github</li></a>
+					<a href="../tools/webhook.html"><li>Webhook Sender</li></a>
+				</ul>
+			</article>
+			<article class="footer-content">
+				<h3>Moh’s Ambient Hour</h3>
+				<ul>
+					<a><li>#MissionMoh</li></a>
+					<a href="merch.html"><li>Moh Merch</li></a>
+					<a><li>Meet Moh 2021</li></a>
+				</ul>
+			</article>
+			<article class="footer-content">
+				<h3>Navigation</h3>
+				<ul>
+					<!-- <a onclick="document.getElementById('landing').scrollIntoView();"><li>Back to top</li></a> --> <!-- replaced with btt button -->
+					<a onclick="document.getElementById('why').scrollIntoView();"><li>Why MAH?</li></a>
+					<a onclick="document.getElementById('users').scrollIntoView();"><li>Quotes</li></a>
+					<a onclick="document.getElementById('current_episode').scrollIntoView();"><li>Current episode</li></a>
+					<a onclick="document.getElementById('lib').scrollIntoView();"><li>Archive</li></a>
+				</ul>
+			</article>
+		</div>
+		<div class="sb">
+			<address>In <span class="moh">Moh</span> we trust.</address>
+		</div>
+	</footer>
+	
+	<!-- <script src="../assets/scripts/js/mmh/mmh-rspmv.js" type="text/javascript"></script> -->
+	<script src="../assets/scripts/js/mmh/mmh-cards.js" type="text/javascript"></script>
+	<script src="../assets/scripts/js/mmh/mmh-nav.js" type="text/javascript"></script>
+</body>
+</html>
