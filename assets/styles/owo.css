@@ -1,0 +1,57 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "MS PGothic", "Arial", "Segoe UI", sans-serif;
+	font-weight: bold;
+}
+
+body {
+	background: url('../images/backgrounds/2020-05-09_18.30.32.png') no-repeat center center;
+	background-size: cover;
+	min-height: 100vh;
+}
+
+.container {
+	position: relative;
+	top: 120px;
+	display: block;
+	width: 960px;
+	margin: 0 auto;
+
+	border: 2.1px solid #880000;
+}
+
+.container .head {
+	background-color: #ffccaa;
+	color: #880000;
+	font: bold 20px/1 "MS PGothic", "Arial", "Segoe UI", sans-serif;
+	padding: 6px;
+	border-bottom: 2px solid #880000;
+}
+
+.container .content {
+	color: #880000;
+	font: bold 20px/1 "MS PGothic", "Arial", "Segoe UI", sans-serif;
+	padding: 20px 6px;
+	background: #fff6ef;
+}
+
+option[disabled] {
+	background: #880000;
+	color: #fff;
+	text-decoration: line-through;
+}
+
+.content .d {
+	margin: 60px auto;
+	width: 100%;
+	border: 0;
+	border-top: 2px solid #880000;
+}
+
+.content #sp {
+	display: block;
+	width: 90%;
+	margin: 0 auto 45px auto !important;
+}
